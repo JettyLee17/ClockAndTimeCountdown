@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/js-calendar-converter/dist/js-calendar-converter.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="SunMoon"></div>
+
+        <div class="TimeBlock">
+            <div class="widget">
+                <div class="time" id="clock"></div>
+                <div class="date" id="calendar"></div>
+                <div class="lunar" id="lunar"></div>
+                <div class="festival" id="festival"></div>
+                <div class="lunarFestival" id="lunarFestival"></div>
+                <div class="term" id="term"></div>
+                <div class="term" id="nextEvent"></div>
+            </div>
+
+            <div class="countdown">
+                <div>
+                    <h4>
+                        今年还剩：
+                        <span id="remaining-days-this-year"></span>
+                        <span id="remaining-time4"></span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" id="year-progress"></div>
+                        <div class="progress-text" id="year-text"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>
+                        这个月还剩：
+                        <span id="remaining-days-this-month"></span>
+                        <span id="remaining-time3"></span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" id="month-progress"></div>
+                        <div class="progress-text" id="month-text"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>
+                        这个星期还剩：
+                        <span id="remaining-week"></span>
+                        <span id="remaining-time2"></span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" id="week-progress"></div>
+                        <div class="progress-text" id="week-text"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>
+                        今天还剩：
+                        <span id="remaining-time1"></span>
+                    </h4>
+                    <div class="progress">
+                        <div class="progress-bar" id="day-progress"></div>
+                        <div class="progress-text" id="day-text"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="stars">
+            <a class="star01">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                </svg>
+            </a>
+            <a class="star02">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                </svg>
+            </a>
+            <a class="star03">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

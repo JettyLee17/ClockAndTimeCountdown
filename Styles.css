@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    flex-direction: column;
+}
+
+.widget {
+    /* background: linear-gradient(135deg, #1c2b5a, #2f4b7c); */
+    padding: 20px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.time {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.date,
+.lunar,
+.festival,
+.lunarFestival,
+.term {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+
+/* 时间进度条样式 */
+.progress {
+    width: 200px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative;
+    /* 为了让内部文本绝对定位 */
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    transition: width 0.5s, background-color 0.5s;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* 百分比文字颜色 */
+    font-weight: bold;
+}
+
+.TimeBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.countdown {
+    color: white;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时钟与日历</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="node_modules/js-calendar-converter/dist/js-calendar-converter.js"></script>
+</head>
+
+<body>
+    <div class="widget">
+        <div class="time" id="clock"></div>
+        <div class="date" id="calendar"></div>
+        <div class="lunar" id="lunar"></div>
+        <div class="festival" id="festival"></div>
+        <div class="lunarFestival" id="lunarFestival"></div>
+        <div class="term" id="term"></div>
+        <div class="term" id="nextEvent"></div>
+    </div>
+
+
+    <div>
+        <h4 style="color: white;">
+            今年还剩：
+            <span id="remaining-days-this-year"></span>
+            <span id="remaining-time4"></span>
+        </h4>
+        <div class="progress">
+            <div class="progress-bar" id="year-progress"></div>
+            <div class="progress-text" id="year-text"></div>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="color: white;">
+            这个月还剩：
+            <span id="remaining-days-this-month"></span>
+            <span id="remaining-time3"></span>
+        </h4>
+        <div class="progress">
+            <div class="progress-bar" id="month-progress"></div>
+            <div class="progress-text" id="month-text"></div>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="color: white;">
+            这个星期还剩：
+            <span id="remaining-week"></span>
+            <span id="remaining-time2"></span>
+        </h4>
+        <div class="progress">
+            <div class="progress-bar" id="week-progress"></div>
+            <div class="progress-text" id="week-text"></div>
+        </div>
+    </div>
+
+    <div>
+        <h4 style="color: white;">
+            今天还剩：
+            <span id="remaining-time1"></span>
+        </h4>
+        <div class="progress">
+            <div class="progress-bar" id="day-progress"></div>
+            <div class="progress-text" id="day-text"></div>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
